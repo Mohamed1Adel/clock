@@ -1,0 +1,119 @@
+/* import google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+  transition: all 0.4s ease;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 0 20px;
+}
+section.dark {
+  background-color: #24292d;
+}
+section .container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 220px;
+  max-width: 560px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0 0 0 /0.2);
+  border-radius: 12px;
+  position: relative;
+}
+section.dark .container {
+  background-color: #323840;
+}
+section .container .icons i {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 30px;
+  height: 30px;
+  background-color: #24292d;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+section.dark .container i {
+  color: #323840;
+  background-color: #fff;
+}
+section .container .icons i.fa-sun {
+  opacity: 0;
+  pointer-events: none;
+}
+section.dark .container i.fa-sun {
+  opacity: 1;
+  pointer-events: auto;
+  font-size: 16px;
+}
+section .container .time {
+  display: flex;
+  align-items: center;
+}
+
+section .container .time .time-colon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+section .container .time .time-colon .am_pm {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+section.dark .container .time .time-colon .am_pm {
+  color: #fff;
+}
+section .container .time .time-colon .time-text {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f8ff;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0 0 0 /0.2);
+}
+section.dark .container .time .time-colon .time-text {
+  background-color: #24292d;
+}
+section .container .time .time-colon .time-text,
+section .container .time .time-colon .colon {
+  font-size: 35px;
+  font-weight: 600;
+}
+section.dark .container .time .time-colon .time-text .num,
+section.dark .container .time .time-colon .colon {
+  color: #fff;
+}
+section .container .time .time-colon .colon {
+  font-size: 40px;
+  margin: 0 10px;
+}
+section.dark .container .time .time-colon .text {
+  color: #fff;
+}
+section .container .time .time-colon .time-text .text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
